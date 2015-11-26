@@ -9,8 +9,14 @@ namespace app\controllers;
 
 
 
-return function(){
-    $mydb=include_once(ROOTDIR.COREDIR.'getMysql.php');
+return function() use(&$appEnviroment){
+    session_start();
+    $appEnviroment['GetUser'] = function(){return 'ПОЛЬЗОВАТЕЛЬ';};
+   /* $mydb=include_once(ROOTDIR.COREDIR.'getMysql.php');
+
+    print_r($_SESSION);
+    $_SESSION['session'] = md5(time());
+
   //  $query = 'select * from test';
   //  $result = call_user_func($mydb,$query);
-    echo 'init controller'."\n"; return true;};
+    echo $appEnviroment.'init controller'."\n"; */return true;};

@@ -10,4 +10,4 @@ namespace app\controllers;
 
 
 
-return function(){echo 'main controller'."\n"; return true;};
+return function()use(&$appEnviroment){echo $appEnviroment.'main controller'."\n"; return true;};

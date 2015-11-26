@@ -10,7 +10,7 @@ namespace app\core;
 
 
 function app($config){
-
+    $appEnviroment=array();
     if (isset($config['init'])){
         $init = include_once(ROOTDIR.CONTROLLERDIR.$config['init']);
         if (!call_user_func($init)) return false;
