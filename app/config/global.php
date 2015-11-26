@@ -8,12 +8,25 @@
  */
 namespace app\config;
 
+/*
+[
+    'route' => [['controller'=>'controller.php', 'url'=>'{url}'],...],
+    'init'=> 'initController.php',
+    'err' => 'errController.php'
+    'db' => ['host'=>'','user'=>'','pass'=>''],
+
+]
 
 
+*/
 
-    $db = include_once('db.php');
+
+    $db = include(ROOTDIR.CONFIGDIR.'db.php');
     return array(
-         'some'=>4,
+         'init'=>'initController.php',
+        'route'=>[
+            array('controller'=>'mainController.php','url'=>'/main/'),
+        ] ,
         'db' => $db,
         'any'=> 'str',
     );

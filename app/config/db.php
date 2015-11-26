@@ -9,5 +9,5 @@
 namespace app\config;
 
 
-    return array('name'=>'mysql','pass'=>'asdfsdfsd');
+    return array('host'=>'localhost', 'name'=>'func','pass'=>'func','db'=>'func');
 
