@@ -25,8 +25,10 @@ namespace app\config;
     return array(
          'init'=>'initController.php',
         'route'=>[
+            array('controller'=>'mainController.php','url'=>''),
             array('controller'=>'mainController.php','url'=>'/main/'),
+            array('controller'=>'regController.php','url'=>'/reg/'),
         ] ,
         'db' => $db,
-        'any'=> 'str',
+
     );

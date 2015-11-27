@@ -1,0 +1,140 @@
+/* Eric Meyer's CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header,  menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of Eric Meyer's CSS Reset */
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+	display: block;
+}
+body {
+	font: 12px/18px Arial, sans-serif;
+	margin:0 auto; width:90%;
+}
+.wrapper {
+	width: 100%;
+	min-width: 1000px;
+}
+
+
+
+
+ul.css-menu-2 {
+	list-style: none;
+	border-bottom: 1px #888899 solid;
+	padding-bottom: 10px
+}
+
+ul.css-menu-2 li {
+	display: inline;
+	margin-right: 5px
+}
+
+ul.css-menu-2 li a {
+	color: #888899;
+	text-decoration: none;
+	background: #f7f7f9;
+	border: 1px #bbbbcc solid;
+	border-bottom: none;
+	padding: 10px 14px
+}
+
+ul.css-menu-2 li a:hover {
+	padding: 14px 14px 10px 14px
+}
+
+ul.css-menu-2 li a.selected {
+	color: #555566;
+	background: #ffffff;
+	border: 1px #888899 solid;
+	border-bottom: 1px #ffffff solid;
+	padding: 14px 14px 10px 14px
+}
+
+#column-1 {
+	width: 20%;
+	background: red;
+	float: left;
+	min-height: 100%;
+}
+
+#column-2 {
+	background: green;
+	width: 60%;
+	min-height: 100%;
+	float: left;
+}
+#column-3 {
+	width: 20%;
+	min-height: 100%;
+	float: left;
+	background: blue;
+}
+
+
+/* Header
+-----------------------------------------------------------------------------*/
+.header {
+	height: 150px;
+	background: #FFE680;
+}
+
+
+/* Middle
+-----------------------------------------------------------------------------*/
+.content {
+}
+
+
+
+
+/* Footer
+-----------------------------------------------------------------------------*/
+.footer {
+	height: 100px;
+	background: #BFF08E;
+}

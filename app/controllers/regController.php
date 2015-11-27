@@ -12,4 +12,7 @@ namespace app\controllers;
 
 return function()use(&$appEnviroment){
 
-    echo $appEnviroment.'main controller'."\n"; return true;};
+   // echo $appEnviroment.'reg controller'."\n";
+    include (ROOTDIR.VIEWDIR.'regView.php');
+    return true;
+};

@@ -19,4 +19,4 @@ return function() use(&$appEnviroment){
 
   //  $query = 'select * from test';
   //  $result = call_user_func($mydb,$query);
-    echo $appEnviroment.'init controller'."\n"; */return true;};
+  */  echo 'init controller'."\n"; return true;};
